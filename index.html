@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+
+
+
+    <nav>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="https://www.nhs.uk/common-health-questions/lifestyle/what-is-the-body-mass-index-bmi/" target="_blank"> About</a></li>
+            <li><a href="#footer">Contact</a>
+                <li>
+        </ul>
+    </nav>
+    <div class="h1" id="home">
+        <h1>BMI <span class="cal">Calculator</span></h1>
+    </div>
+
+    <div class="container">
+
+        <div class="calculate">
+
+            <div id="w1">Weight(kg)</div>
+            <input type="number" id="weight" placeholder="enter weight in kg">
+            <div id="h1">Height(cm)</div>
+            <input type="number" id="height" placeholder="enter height in cm">
+            <div id="result"></div>
+            <div id="status"></div>
+            <button id="btn" onclick="bmiCalculate()">Calculate</button>
+            <p id="p1">Please enter weight in kg and height in cm</p>
+
+        </div>
+
+
+        <div class="convert">
+            <h3 class="h5">Do you know your height in <span class="cm">CM ? </span></h3>
+            <h3 id="h51">Check it below.</h3>
+            <div id="h2">Height(feet)</div>
+            <input type="number" id="he1" placeholder="enter height in ft.">
+            <button id="btn1" onclick="ftTocm()">Convert</button>
+            <div id="cm"></div>
+
+            <p id="p2">Please enter height in feet</p>
+
+        </div>
+    </div>
+    <script src="bmi.js"></script>
+</body>
+
+<footer id="footer">
+    <span class="contact">© All copyrights reserved </span>
+</footer>
+
+</html>
